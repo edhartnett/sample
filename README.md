@@ -1,0 +1,2 @@
+# sample
+Sample CMake repo
