@@ -1,2 +1,2 @@
 # sample
-Sample CMake repo
+Sampl
