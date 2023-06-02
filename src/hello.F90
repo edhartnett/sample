@@ -1,9 +1,9 @@
 !> @file
-!> This is a Fortran file.
+!> @brief Code for the hello program.
 !>
 !> @author Ed Hartnett, @date 6/2/23
 
-!> This is a Fortran program.
+!> Say hello and do a fizz-buzz.
 !>
 !> @return 0 for successful execution.
 !> @author Ed Hartnett, @date 6/2/23
