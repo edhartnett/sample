@@ -10,5 +10,14 @@ project(g2c VERSION ${pVersion} LANGUAGES Fortran)
 
 include(GNUInstallDirs)
 
+# Handle user options.
+option(ENABLE_DOCS "Enable generation of doxygen-based documentation." OFF)
+
 # Build the code in the source directory.
 add_subdirectory(src)
+
+# Determine whether or not to generate documentation.
+if(ENABLE_DOCS)
+  find_package(Doxygen REQUIRED)
+  add_subdirectory(docs)
+endif()

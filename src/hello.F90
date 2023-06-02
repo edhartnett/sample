@@ -1,6 +1,11 @@
-  ! This is a Fortran program.
-  !
-  ! Ed Hartnett, 6/2/23
+!> @file
+!> This is a Fortran file.
+!>
+!> @author Ed Hartnett, @date 6/2/23
+
+!> This is a Fortran program.
+!>
+!> @author Ed Hartnett, @date 6/2/23
 program hello
   implicit none
   integer :: i
