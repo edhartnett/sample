@@ -7,7 +7,7 @@ set -e
 echo ""
 echo "*** Running hello test"
 
-# Degrib2 a GRIB2 file.
+# Run hello and capture the output.
 ../src/hello > hello.txt
 
 # Check against expected output.
