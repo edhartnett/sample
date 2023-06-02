@@ -5,6 +5,7 @@
 
 !> This is a Fortran program.
 !>
+!> @return 0 for successful execution.
 !> @author Ed Hartnett, @date 6/2/23
 program hello
   implicit none
@@ -15,6 +16,11 @@ program hello
   call fizzbuzz(MAX_COUNT)
 end program hello
 
+!> Do the fizzbuzz.
+!>
+!> @param max_count The number to count to.
+!>
+!> @author Ed Hartnett @date 6/2/23
 subroutine fizzbuzz(max_count)
   implicit none
   integer, intent(in) :: max_count
@@ -28,6 +34,13 @@ subroutine fizzbuzz(max_count)
   end do
 end subroutine fizzbuzz
 
+!> Is a number evenly divisible by 3?
+!>
+!> @param number The number to check.
+!>
+!> @return .true. if number is divisible by 3, .false. otherwise.
+!>
+!> @author Ed Hartnett @date 6/2/23
 function fizzy(number)
   implicit none
   integer, intent(in) :: number
@@ -40,6 +53,13 @@ function fizzy(number)
   endif
 end function fizzy
 
+!> Is a number evenly divisible by 5?
+!>
+!> @param number The number to check.
+!>
+!> @return .true. if number is divisible by 5, .false. otherwise.
+!>
+!> @author Ed Hartnett @date 6/2/23
 function buzzy(number)
   implicit none
   integer, intent(in) :: number
